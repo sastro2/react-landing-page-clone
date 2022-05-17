@@ -70,7 +70,7 @@ const requestAProductTourStyle = css`
   margin-top: 50px;
   margin-bottom: 130px;
   padding: 10px;
-  background-color: pink;
+  background-color: #ff3665;
   border-radius: 15px;
   width: 230px;
   justify-content: space-around;
@@ -131,7 +131,7 @@ const learnMoreAboutNebulaTextStyle = css`
   display: flex;
   font-size: 24px;
   color: white;
-  background-color: pink;
+  background-color: #ff3665;
   margin-right: 820px;
   justify-content: space-around;
   align-items: center;
@@ -169,7 +169,7 @@ const thirdSectionListStyle = css`
 const seeOurConnectedDatasets = css`
   display: flex;
   color: white;
-  background-color: pink;
+  background-color: #ff3665;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
@@ -283,9 +283,127 @@ const viewProductsStyle = css`
   height: 4vh;
   border-radius: 15px;
   color: white;
-  background-color: pink;
+  background-color: #ff3665;
   margin-left: 840px;
   margin-right: 840px;
+`;
+
+const sectionSixStyle = css`
+  background-color: white;
+`;
+
+const sectionSixHeaderStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  font-size: 62px;
+  color: #666666;
+`;
+
+const eachReportWasCreated = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: 20px;
+`;
+
+const sectionSixTextStyle = css`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  margin-left: 280px;
+  margin-right: 280px;
+
+  header {
+    font-size: 20px;
+    color: #666666;
+  }
+
+  p {
+    font-size: 16px;
+    color: #666666;
+    margin-right: 50px;
+  }
+`;
+
+const viewAllResearchReports = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 4vh;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff3665;
+  margin-left: 790px;
+  margin-right: 790px;
+`;
+
+const sectionSevenStyle = css`
+  margin-top: 50px;
+  color: white;
+  height: 35vh;
+`;
+
+const sectionSevenHeaderStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+`;
+
+const sectionSevenTextStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 35px;
+`;
+
+const sectionEightStlye = css`
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  background-image: url(https://cdn2.hubspot.net/hubfs/5852888/Ironpaper/molecular-background@3x.png);
+  background-position: bottom right;
+  background-size: 65% auto;
+  background-repeat: no-repeat;
+  height: 25vh;
+  align-items: center;
+`;
+
+const sectionEightTextStyle = css`
+  display: flex;
+  flex-direction: column;
+`;
+
+const connectWithAnExpert = css`
+  font-size: 16px;
+  color: #ff3665;
+  margin-left: -150px;
+`;
+
+const seeHowResoluteAI = css`
+  font-size: 24px;
+  margin-left: -150px;
+`;
+
+const connectWithUs = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 4vh;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff3665;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 function App() {
@@ -560,8 +678,88 @@ function App() {
           </ul>
           <p css={viewProductsStyle}>View products</p>
         </section>
+        <section css={sectionSixStyle}>
+          <header css={sectionSixHeaderStyle}>
+            Check out ResoluteAI's research reports
+          </header>
+          <p css={eachReportWasCreated}>
+            Each report was created by our information retrieval specialists
+            using data discovered from our scientific research platform.
+          </p>
+          <div css={sectionSixTextStyle}>
+            <div>
+              <img
+                src="./images/img_1.jpeg"
+                alt="hand holding glowy thing"
+                height="279px"
+              ></img>
+              <header>Targeted protein degradation</header>
+              <p>
+                Market landscape: Research and investment trends, technologies
+                available for licensing, PROTACs and emerging TPD strategies,
+                along with leading companies, universities, inventors, and
+                researchers.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./images/img_2.jpeg"
+                alt="hand holding book"
+                height="279px"
+              ></img>
+              <header>Into the metaverse</header>
+              <p>
+                High-level market landscape: News, patents, academic
+                publications, clinical trials, companies, and the rise of this
+                concept - it's been around far longer than you'd expect.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./images/img_3.jpeg"
+                alt="hand holding glowy thing"
+                height="279px"
+              ></img>
+              <header>Micelle nanoparticle applications</header>
+              <p>
+                This report assesses the current state of micelle nanoparticle
+                development and the recent growth within the field. At the end
+                of 2021, there was nearly a three-fold increase in news
+                publications related to micelle nanoparticles.
+              </p>
+            </div>
+          </div>
+          <p css={viewAllResearchReports}>View all research reports</p>
+        </section>
+        <section css={sectionSevenStyle}>
+          <header css={sectionSevenHeaderStyle}>
+            Who needs a scientific research platform?
+          </header>
+          <p css={sectionSevenTextStyle}>
+            If you spend more than a couple of hours a week looking for academic
+            research, or scanning through patents, or exploring tech transfer
+            opportunities, a research platform that brings all these databases
+            together, and more, might be helpful. Maybe you have a research
+            organization tool, or use desktop software to organize research for
+            yourself or for your colleagues. A research platform that brings all
+            your results together might save you a tremendous amount of time.
+            And money. Information platforms exist for all domains, ResoluteAI’s
+            online research platform is focused on scientific research and is
+            used by professionals in pharma, biotech, chemical, diagnostics,
+            consumer products, and many other industries around the world.
+          </p>
+        </section>
+        <section css={sectionEightStlye}>
+          <div css={sectionEightTextStyle}>
+            <p css={connectWithAnExpert}>Connect with an expert</p>
+            <p css={seeHowResoluteAI}>
+              See how ResoluteAI's research platform can help you
+            </p>
+          </div>
+          <p css={connectWithUs}>CONNECT WITH US</p>
+        </section>
       </main>
-      <footer>footer</footer>
+      <footer></footer>
     </div>
   );
 }
