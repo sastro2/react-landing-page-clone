@@ -45,12 +45,15 @@ const videoPlayer = css`
 const navigationMenuListStyles = css`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   color: white;
   margin-top: 50px;
+  list-style: none;
 `;
 
 const logoStyles = css`
   margin-left: 100px;
+  justify-self: center;
 `;
 
 const signInButtonStyles = css`
@@ -237,13 +240,63 @@ const learnMoreAboutFoundationStyle = css`
   color: red;
 `;
 
+const sectionFiveStyle = css``;
+
+const sectionFiveHeaderStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  font-size: 48px;
+  color: white;
+`;
+
+const sectionFiveGrid = css`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  margin-left: 320px;
+  margin-right: 320px;
+  column-gap: 130px;
+
+  li {
+    display: flex;
+    margin-top: 30px;
+
+    header {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+`;
+
+const viewProductsStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 4vh;
+  border-radius: 15px;
+  color: white;
+  background-color: pink;
+  margin-left: 840px;
+  margin-right: 840px;
+`;
+
 function App() {
   return (
     <div>
       <main>
         <nav>
           <ul css={navigationMenuListStyles}>
-            <li css={logoStyles}>Logo</li>
+            <li css={logoStyles}>
+              <img src="./images/resoluteAI_Logo.PNG" alt="logo"></img>
+            </li>
             <li>
               <strong>Scientific Research Platform</strong>
             </li>
@@ -388,6 +441,124 @@ function App() {
               </p>
             </div>
           </div>
+        </section>
+        <section css={sectionFiveStyle}>
+          <header css={sectionFiveHeaderStyle}>
+            ResoluteAI's research and analysis features
+          </header>
+          <ul css={sectionFiveGrid}>
+            <li>
+              <img src="./images/icon_1.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Natural language processing</header>
+                <p>
+                  Structured metadata created from unstructured text, semantic
+                  expansion, conceptual search, and document similarity search
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_2.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Faceted search</header>
+                <p>
+                  Filter results based on structured metadata created by NLP or
+                  contained in the source database
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_3.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Multiple ontologies and taxonomies</header>
+                <p>
+                  ResoluteAI’s proprietary science-focused ontology plus
+                  PubChem, MeSH, and more.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_4.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Alerts</header>
+                <p>
+                  Save searches and have results delivered directly to your
+                  inbox
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_5.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Search results export</header>
+                <p>
+                  Export your search results for analysis outside the ResoluteAI
+                  platform
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_6.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Optical character recognition</header>
+                <p>
+                  Index and understand text that appears in handwritten
+                  documents, images, and video
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_7.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Document cracking</header>
+                <p>
+                  Open documents embedded in other documents for complete
+                  indexing and discovery
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_8.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Image recognition</header>
+                <p>
+                  Identifies images, graphs, charts, and logos in documents and
+                  video
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_9.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Audio transcription</header>
+                <p>
+                  Transcribes and indexes talk tracks from webinars, videos, and
+                  other presentations
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_10.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Format agnostic</header>
+                <p>
+                  Ingestion and indexing works on dozens of formats including
+                  Microsoft Office documents, PDFs, .msg, audio, and video
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/icon_11.svg" alt="icon" height="50px"></img>
+              <div>
+                <header>Source agnostic</header>
+                <p>
+                  SharePoint, Azure Blob, Box, DropBox, GDrive, and many other
+                  data storage solutions are supported
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p css={viewProductsStyle}>View products</p>
         </section>
       </main>
       <footer>footer</footer>
