@@ -13,6 +13,12 @@
   }
 }
 
+@font-face {
+  font-family: 'MarkPro';
+  src: url('./fonts/MarkPro-Light.woff') format('woff'),
+    url('./fonts/MarkPro-Light.ttf') format('truetype');
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
