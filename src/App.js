@@ -413,7 +413,7 @@ function App() {
         <nav>
           <ul css={navigationMenuListStyles}>
             <li css={logoStyles}>
-              <img src="./images/resoluteAI_Logo.PNG" alt="logo"></img>
+              <img src="./images/resoluteAI_Logo.PNG" alt="logo" />
             </li>
             <li>
               <strong>Scientific Research Platform</strong>
@@ -470,8 +470,9 @@ function App() {
           <iframe
             css={videoPlayer}
             title="vidyard-video-player"
+            sandbox=""
             src="https://play.vidyard.com/fdhmZJCt8CG5zcSQ2B2vPz?disable_popouts=1&v=4.2.30&viral_sharing=0&embed_button=0&hide_playlist=1&color=FFFFFF&playlist_color=FFFFFF&play_button_color=ff3665&gdpr_enabled=1&type=inline&autoplay=0&loop=0&muted=0&hidden_controls=0&pomo=2&vydata%5Butk%5D=d8863996af5c6312ffd8384fd8278c6d&vydata%5Bportal_id%5D=5852888&vydata%5Bhs_original_external_id%5D=&vydata%5Bhs_original_external_uuid%5D=&vydata%5Bcontent_type%5D=standard-page&vydata%5Bcanonical_url%5D=https%3A%2F%2Fwww.resolute.ai&vydata%5Bpage_id%5D=11949428936&vydata%5Bcontent_page_id%5D=11949428936&vydata%5Blegacy_page_id%5D=11949428936&vydata%5Bcontent_folder_id%5D=null&vydata%5Bcontent_group_id%5D=null&vydata%5Bab_test_id%5D=null&vydata%5Blanguage_code%5D=null"
-          ></iframe>
+          />
         </section>
         <section css={secondSectionStyle}>
           <header>Who innovates with ResoluteAI's research platform?</header>
@@ -500,7 +501,7 @@ function App() {
               src="./images/ResoluteAI_PC_Image.png"
               alt="a PC"
               height="280px"
-            ></img>
+            />
             <ul css={thirdSectionListStyle}>
               <li>Competitive intelligence</li>
               <li>Drug repurposing</li>
@@ -526,7 +527,7 @@ function App() {
               src="./images/Nebula_RD with effects.png"
               alt="thing"
               height="500px"
-            ></img>
+            />
             <div css={sectionFourFirstTextStyle}>
               <header css={sectionFourFirstHeaderStyle}>
                 Unlock hidden value in your research
@@ -540,11 +541,7 @@ function App() {
             </div>
           </div>
           <div css={sectionfourSecondImageStyle}>
-            <img
-              src="./images/Nebula_RD_2.png"
-              alt="thingy"
-              height="300px"
-            ></img>
+            <img src="./images/Nebula_RD_2.png" alt="thingy" height="300px" />
             <div css={sectionFourSecondTextStyle}>
               <header css={sectionFourSecondHeaderStyle}>
                 Revolutionize your research and analysis
@@ -566,7 +563,7 @@ function App() {
           </header>
           <ul css={sectionFiveGrid}>
             <li>
-              <img src="./images/icon_1.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_1.svg" alt="icon" height="50px" />
               <div>
                 <header>Natural language processing</header>
                 <p>
@@ -576,7 +573,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_2.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_2.svg" alt="icon" height="50px" />
               <div>
                 <header>Faceted search</header>
                 <p>
@@ -586,7 +583,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_3.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_3.svg" alt="icon" height="50px" />
               <div>
                 <header>Multiple ontologies and taxonomies</header>
                 <p>
@@ -596,7 +593,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_4.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_4.svg" alt="icon" height="50px" />
               <div>
                 <header>Alerts</header>
                 <p>
@@ -606,7 +603,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_5.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_5.svg" alt="icon" height="50px" />
               <div>
                 <header>Search results export</header>
                 <p>
@@ -616,7 +613,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_6.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_6.svg" alt="icon" height="50px" />
               <div>
                 <header>Optical character recognition</header>
                 <p>
@@ -626,7 +623,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_7.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_7.svg" alt="icon" height="50px" />
               <div>
                 <header>Document cracking</header>
                 <p>
@@ -636,7 +633,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_8.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_8.svg" alt="icon" height="50px" />
               <div>
                 <header>Image recognition</header>
                 <p>
@@ -646,7 +643,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_9.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_9.svg" alt="icon" height="50px" />
               <div>
                 <header>Audio transcription</header>
                 <p>
@@ -656,7 +653,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_10.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_10.svg" alt="icon" height="50px" />
               <div>
                 <header>Format agnostic</header>
                 <p>
@@ -666,7 +663,7 @@ function App() {
               </div>
             </li>
             <li>
-              <img src="./images/icon_11.svg" alt="icon" height="50px"></img>
+              <img src="./images/icon_11.svg" alt="icon" height="50px" />
               <div>
                 <header>Source agnostic</header>
                 <p>
@@ -692,7 +689,7 @@ function App() {
                 src="./images/img_1.jpeg"
                 alt="hand holding glowy thing"
                 height="279px"
-              ></img>
+              />
               <header>Targeted protein degradation</header>
               <p>
                 Market landscape: Research and investment trends, technologies
@@ -706,7 +703,7 @@ function App() {
                 src="./images/img_2.jpeg"
                 alt="hand holding book"
                 height="279px"
-              ></img>
+              />
               <header>Into the metaverse</header>
               <p>
                 High-level market landscape: News, patents, academic
@@ -719,7 +716,7 @@ function App() {
                 src="./images/img_3.jpeg"
                 alt="hand holding glowy thing"
                 height="279px"
-              ></img>
+              />
               <header>Micelle nanoparticle applications</header>
               <p>
                 This report assesses the current state of micelle nanoparticle
@@ -759,7 +756,6 @@ function App() {
           <p css={connectWithUs}>CONNECT WITH US</p>
         </section>
       </main>
-      <footer></footer>
     </div>
   );
 }
